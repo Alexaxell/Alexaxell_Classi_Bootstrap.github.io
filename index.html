@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 5 - Riepilogo Completo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #e9ecef;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #712cf9, #0d6efd);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #adb5bd;
+            padding: 6px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background: #1a1f2b;
+            color: white;
+        }
+
+        .section-card {
+            background: #111827;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            color: #dee2e6;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-weight: 700;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="hero">
+    <h1 class="display-4 fw-bold">Bootstrap 5 Cheatsheet</h1>
+    <p class="lead">Versione completa — stile documentazione ufficiale</p>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+
+        <!-- SIDEBAR -->
+        <div class="col-md-3 px-4">
+            <div class="sidebar">
+                <h5>Indice</h5>
+                <a href="#starter">Starter</a>
+                <a href="#colori">Colori & Spazi</a>
+                <a href="#bottoni">Bottoni</a>
+                <a href="#griglia">Griglia</a>
+                <a href="#card">Card</a>
+                <a href="#navbar">Navbar</a>
+                <a href="#pricing">Prezzi</a>
+                <a href="#spacing">Spaziatura</a>
+                <a href="#colors">Colori Tema</a>
+            </div>
+        </div>
+
+        <!-- CONTENUTO -->
+        <div class="col-md-9">
+
+            <!-- STARTER -->
+            <div id="starter" class="section-card">
+                <h2>Starter Template</h2>
+                <table class="table table-dark table-striped">
+                    <tr><td>integrity</td><td>Hash sicurezza CDN</td></tr>
+                    <tr><td>crossorigin</td><td>Richiesta anonima</td></tr>
+                    <tr><td>media="screen"</td><td>Solo schermi</td></tr>
+                    <tr><td>id</td><td>Identificatore unico</td></tr>
+                    <tr><td>class</td><td>Classe riutilizzabile</td></tr>
+                    <tr><td>.min.css / .min.js</td><td>File compressi</td></tr>
+                    <tr><td>script prima di body</td><td>Performance</td></tr>
+                </table>
+            </div>
+
+            <!-- COLORI -->
+            <div id="colori" class="section-card">
+                <h2>Colori e Spazi</h2>
+                <table class="table table-dark table-striped">
+                    <tr><td>container</td><td>Layout centrato</td></tr>
+                    <tr><td>row</td><td>Riga flex</td></tr>
+                    <tr><td>col</td><td>Colonna auto</td></tr>
+                    <tr><td>mt-5</td><td>Margine top</td></tr>
+                    <tr><td>mb-4</td><td>Margine bottom</td></tr>
+                    <tr><td>p-3</td><td>Padding</td></tr>
+                    <tr><td>p-5</td><td>Padding grande</td></tr>
+                    <tr><td>bg-light</td><td>Grigio chiaro</td></tr>
+                    <tr><td>bg-dark</td><td>Scuro</td></tr>
+                    <tr><td>bg-primary</td><td>Blu</td></tr>
+                    <tr><td>bg-success</td><td>Verde</td></tr>
+                    <tr><td>bg-danger</td><td>Rosso</td></tr>
+                    <tr><td>bg-warning</td><td>Giallo</td></tr>
+                    <tr><td>bg-info</td><td>Azzurro</td></tr>
+                    <tr><td>text-white</td><td>Bianco</td></tr>
+                    <tr><td>text-dark</td><td>Scuro</td></tr>
+                    <tr><td>text-muted</td><td>Grigio</td></tr>
+                    <tr><td>text-center</td><td>Centrato</td></tr>
+                    <tr><td>display-5</td><td>Titolo grande</td></tr>
+                    <tr><td>fw-bold</td><td>Grassetto</td></tr>
+                    <tr><td>lead</td><td>Sottotitolo</td></tr>
+                    <tr><td>rounded-3</td><td>Angoli arrotondati</td></tr>
+                </table>
+            </div>
+
+            <!-- BOTTONI -->
+            <div id="bottoni" class="section-card">
+                <h2>Bottoni e Flex</h2>
+                <table class="table table-dark table-striped">
+                    <tr><td>d-flex</td><td>Flex</td></tr>
+                    <tr><td>flex-wrap</td><td>Va a capo</td></tr>
+                    <tr><td>gap-3</td><td>Spazio</td></tr>
+                    <tr><td>d-grid</td><td>Grid</td></tr>
+                    <tr><td>btn</td><td>Base</td></tr>
+                    <tr><td>btn-primary</td><td>Blu</td></tr>
+                    <tr><td>btn-secondary</td><td>Grigio</td></tr>
+                    <tr><td>btn-danger</td><td>Rosso</td></tr>
+                    <tr><td>btn-warning</td><td>Giallo</td></tr>
+                    <tr><td>btn-dark</td><td>Scuro</td></tr>
+                    <tr><td>btn-outline-success</td><td>Outline verde</td></tr>
+                    <tr><td>btn-outline-dark</td><td>Outline scuro</td></tr>
+                    <tr><td>btn-lg</td><td>Grande</td></tr>
+                    <tr><td>btn-sm</td><td>Piccolo</td></tr>
+                    <tr><td>rounded-pill</td><td>Pill</td></tr>
+                    <tr><td>px-4</td><td>Padding X</td></tr>
+                    <tr><td>w-100</td><td>Larghezza piena</td></tr>
+                </table>
+            </div>
+
+            <!-- GRIGLIA -->
+            <div id="griglia" class="section-card">
+                <h2>Griglia</h2>
+                <table class="table table-dark table-striped">
+                    <tr><td>col-12</td><td>100%</td></tr>
+                    <tr><td>col-6</td><td>50%</td></tr>
+                    <tr><td>col-4</td><td>33%</td></tr>
+                    <tr><td>col-md-4</td><td>Tablet</td></tr>
+                    <tr><td>col-md-6</td><td>Tablet</td></tr>
+                    <tr><td>col-lg-4</td><td>Desktop</td></tr>
+                    <tr><td>g-4</td><td>Spazi griglia</td></tr>
+                </table>
+            </div>
+
+            <!-- CARD -->
+            <div id="card" class="section-card">
+                <h2>Card</h2>
+                <table class="table table-dark table-striped">
+                    <tr><td>card</td><td>Contenitore</td></tr>
+                    <tr><td>card-img-top</td><td>Immagine</td></tr>
+                    <tr><td>card-body</td><td>Contenuto</td></tr>
+                    <tr><td>card-title</td><td>Titolo</td></tr>
+                    <tr><td>card-text</td><td>Testo</td></tr>
+                    <tr><td>card-footer</td><td>Footer</td></tr>
+                    <tr><td>shadow</td><td>Ombra</td></tr>
+                    <tr><td>shadow-lg</td><td>Ombra grande</td></tr>
+                    <tr><td>border-0</td><td>No bordo</td></tr>
+                    <tr><td>bg-transparent</td><td>Trasparente</td></tr>
+                    <tr><td>bg-secondary-subtle</td><td>Soft</td></tr>
+                    <tr><td>justify-content-center</td><td>Centro</td></tr>
+                    <tr><td>align-items-stretch</td><td>Altezza uguale</td></tr>
+                    <tr><td>h-100</td><td>Altezza piena</td></tr>
+                    <tr><td>p-4</td><td>Padding</td></tr>
+                    <tr><td>border</td><td>Bordo</td></tr>
+                    <tr><td>rounded</td><td>Arrotondato</td></tr>
+                </table>
+            </div>
+
+            <!-- NAVBAR -->
+            <div id="navbar" class="section-card">
+                <h2>Navbar</h2>
+                <table class="table table-dark table-striped">
+                    <tr><td>navbar</td><td>Base</td></tr>
+                    <tr><td>navbar-expand-lg</td><td>Responsive</td></tr>
+                    <tr><td>navbar-dark</td><td>Scura</td></tr>
+                    <tr><td>navbar-brand</td><td>Logo</td></tr>
+                    <tr><td>navbar-toggler</td><td>Hamburger</td></tr>
+                    <tr><td>navbar-toggler-icon</td><td>Icona</td></tr>
+                    <tr><td>navbar-collapse</td><td>Menu</td></tr>
+                    <tr><td>navbar-nav</td><td>Lista</td></tr>
+                    <tr><td>nav-item</td><td>Elemento</td></tr>
+                    <tr><td>nav-link</td><td>Link</td></tr>
+                    <tr><td>active</td><td>Attivo</td></tr>
+                    <tr><td>ms-auto</td><td>Destra</td></tr>
+                    <tr><td>collapse</td><td>JS</td></tr>
+                </table>
+            </div>
+
+            <!-- EXTRA -->
+            <div id="pricing" class="section-card">
+                <h2>Piani & Prezzi</h2>
+                <table class="table table-dark table-striped">
+                    <tr><td>btn-outline-primary</td><td>Outline blu</td></tr>
+                    <tr><td>bg-white</td><td>Bianco</td></tr>
+                    <tr><td>shadow-sm</td><td>Ombra piccola</td></tr>
+                    <tr><td>d-flex flex-column</td><td>Colonna</td></tr>
+                    <tr><td>flex-grow-1</td><td>Espande</td></tr>
+                </table>
+            </div>
+
+            <!-- SPAZI -->
+            <div id="spacing" class="section-card">
+                <h2>Scala Spaziatura</h2>
+                <p>0 → 5 = da 0px a 48px</p>
+            </div>
+
+            <!-- COLORI TEMA -->
+            <div id="colors" class="section-card">
+                <h2>Colori Tema</h2>
+                <p>Primary, Secondary, Success, Danger, Warning, Info, Light, Dark, White, Muted</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
